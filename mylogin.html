@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <!-- IMPORT CSS -->
+    <link rel="shortcut icon" href="image/favicon.ico">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <title>啊宝</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        body {}
+
+        .box {
+            width: 1130px;
+            height: 98px;
+            /* background:red;             */
+            margin: auto;
+        }
+
+        .box img {
+            width: 200px;
+            height: 100%;
+        }
+
+        .bac {
+            width: 1519px;
+            height: 588px;
+            background: url(image/login.jpg) no-repeat;
+            background-position: -520px;
+        }
+
+
+        .content {
+            width: 410px;
+            height: 550px;
+            position: absolute;
+            top: 137px;
+            right: 190px;
+            z-index: 999;
+            /* background: rgba(0, 0, 0, .8); */
+            background: #ffffff;
+            ;
+            /* box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5); */
+        }
+
+        .content h2 {
+            display: block;
+            /* position: relative; */
+            margin: 20px;
+            text-align: center;
+            margin-bottom: 35px;
+            cursor: pointer;
+            font-size: 25px;
+            font-weight: normal;
+            color: #f56600;
+        }
+        .content h2 a{
+            color: #f56600;
+
+        }
+        .content .geshi {
+            transition: opacity 1s linear;
+            font-size: 15px;
+            text-align: center;
+            color: red;
+            opacity: 0;
+
+        }
+
+        .content dl input {
+            width: 346px;
+            height: 48px;
+            font-size: 15px;
+            margin: auto;
+            /* background:red; */
+        }
+
+        .content>dl {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 20px;
+            margin-left: 35px;
+        }
+
+        .content>dl:nth-child(1) {
+            margin-top: 0px;
+        }
+
+        .content .login1 {
+            display: block;
+            width: 410px;
+            margin: auto;
+            height: 70px;
+            margin-top: 20px;
+            /* background: lightgoldenrodyellow; */
+
+        }
+
+        .content .login1 input {
+            border-radius: 3px;
+            background-color: #ff6700;
+            width: 350px;
+            height: 55px;
+            border: none;
+            color: #ffffff;
+            cursor: pointer;
+            display: block;
+            font-size: 16px;
+            margin-left: 36px;
+        }
+
+        .content .mes {
+            height: 50px;
+            text-align: center;
+            font-size: 14px;
+            color: #ff6700;
+            cursor: pointer;
+        }
+
+        .content .gozhuce {
+            height: 100px;
+            /* background: rgb(187, 204, 203); */
+            text-align: center;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .content .gozhuce a {
+            color: #999999;
+        }
+
+        .content .myIcon {
+            text-align: center;
+        }
+
+        .content .myIcon span {
+            margin-left: 30px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .content .myIcon span:nth-child(1) {
+            margin-left: 0px;
+        }
+
+        .content .myIcon .qq {
+            color: rgb(23, 118, 196);
+        }
+
+        .content .myIcon .weibo {
+            color: rgb(206, 25, 25);
+        }
+
+        .content .myIcon .zhifubao {
+            color:rgb(32, 149, 178);
+
+        }
+
+        .content .myIcon .weixin {
+            color: #53cf5b;
+        }
+
+        .foot {
+            width: 100%;
+            margin-top: 50px;
+            color: #757575;
+            font-size: 14px;
+        }
+
+        .foot .a {
+            width: 100%;
+            height: 20px;
+            text-align: center;
+        }
+
+        .foot .b {
+            width: 100%;
+            height: 44px;
+            box-sizing: border-box;
+            text-align: center;
+            margin-top: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="image/log.png" alt="">
+    </div>
+    <div class="bac">
+
+    </div>
+    <div class="content">
+        <h2>
+            <span><a href="mylogin.html">用户登录</a></span>
+            <span> | </span>
+            <span><a href="mangerlogin.html">经理登录</a></span>
+        </h2>
+        <dl>
+            <!-- <dt>Username:</dt> -->
+            <dd><input type="text" name="username" class="inpName" placeholder="邮箱/手机号码/小米ID"></dd>
+        </dl>
+        <p class="geshi pName">输入的用户名格式错误!</p>
+        <dl>
+            <!-- <dt>Password:</dt> -->
+            <dd><input type="password" name="password" class="inpPass" placeholder="密码"></dd>
+        </dl>
+        <p class="geshi pPass">输入的密码格式错误!</p>
+        <span class="login1">
+            <input type="submit" id="login" value="登录">
+        </span>
+        <p class="mes">
+            手机短信登录/注册
+        </p>
+        <p class="gozhuce">
+            <a href="#">立即注册&nbsp;</a>
+            <a href="#">|&nbsp;&nbsp;忘记密码</a>
+        </p>
+        <p class="myIcon">
+            <span class="iconfont icon-QQ qq"></span>
+            <span class="iconfont icon-weibo weibo"></span>
+            <span class="iconfont icon-ion-ios-aliPay zhifubao"></span>
+            <span class="iconfont icon-weixin weixin"></span>
+        </p>
+    </div>
+
+    <div class="foot">
+        <p class="a">简体&nbsp;&nbsp;|&nbsp; 繁体&nbsp;|&nbsp; English&nbsp;|&nbsp; 常见问题&nbsp;|&nbsp; 隐私政策</p>
+        <p class="b">小米公司版权所有-京ICP备10046444- <span><img src="image/ghs.png" alt=""></span>
+            京公网安备11010802020134号-京ICP证110507号
+        </p>
+    </div>
+    <!-- IMPORT JS -->
+    <script>
+        let sub = document.querySelector('#sub'),
+            content = document.querySelector('.content'),
+            inpName = content.querySelector('.inpName'),
+            pName = content.querySelector('.pName'),
+            inpPass = content.querySelector('.inpPass'),
+            pPass = content.querySelector('.pPass');
+
+
+
+
+        // sub.addEventListener('click', function (ev) {
+        //     if (content.style.display === 'none') {
+        //         content.style.display = 'block';
+        //         sub.style.display = 'none';
+        //     }
+        // });
+        inpName.onkeydown = inpName.onkeyup = function (ev) {
+            let value = this.value.trim();
+            if (value.length > 0) {
+                let reg = /^[\u4e00-\u9fa5_a-zA-Z0-9]{6,10}$/g;
+                if (!reg.test(value)) {
+                    pName.style.opacity = '1';
+                    return;
+                }
+                pName.style.opacity = '0';
+            }
+        };
+        inpPass.onkeydown = pPass.onkeyup = function (ev) {
+            let value = this.value.trim();
+            if (value.length > 0) {
+                let reg = /^\w{6,12}$/;
+                if (!reg.test(value)) {
+                    pPass.style.opacity = '1';
+                    return;
+                }
+                pPass.style.opacity = '0';
+            };
+
+
+        }
+        login.onclick = function () {
+            let value = inpName.value,
+                value1 = inpPass.value;
+            if (value == '' && value1 !== '') {
+                alert('请输入用户名');
+                return;
+            }
+            if (value1 == '' && value !== '') {
+                alert('请输入密码');
+                return;
+            }
+            if (value == '' && value1 == '') {
+                alert('请输入用户名和密码');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
